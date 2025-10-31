@@ -1,110 +1,92 @@
 body{
+    position: relative;
     padding: 0px auto;
     font: 20px sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 /* top part nav of page */
-
-header{
+.dropImg{
+    height: 60px;
+    width: 10%;
+}
+.burgermenu{
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+    
+    cursor: pointer;
+}
+.burgermenu:nth-child(1){display:none;}
+.navDropdown{
+    position: relative;
+    width: 90vw;
+    padding: 0px auto;
+    margin: 0px auto;
+}
+.side{
     position: fixed;
-    width: 100%;
-    height: 90px;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-align: center;
-    padding: 10px 16px 10px 0px;
+    height: fit-content;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 200px;
+    right: 0px;
+    border-radius: 6px 0px 0px 6px;
+    background-color: rgba(255, 254, 254, 0.548);
+}
+.dropdown{justify-content: center;}
+
+.ghostdiv1{visibility: hidden;}
+
+.ghostdiv2{display: none;}
+
+ul{
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
-    top: 0;
-    z-index: 1;
-}
-.logo{
-    
-    position: relative;
-    top: 22px;
-    padding: 0;
-    margin: 0;
-    height: 80px;
-    width: 300px;
-    
-}
-ul{
-    align-content: center;
-    
-    list-style: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    font: 1.6em sans-serif;
+    list-style-type: none;
+    padding-left: 0px;
+    width: 80vw;
 }
 li{
-    
-    display: inline;
-    padding: 10px 6px 0px 0px;
+    padding-left: 15px;
 }
 a{
     text-decoration: none;
-    color: chocolate;
+    color: rgb(218, 90, 31);
+    font-size: 1.8em;
 }
 a:hover{
+    color:rgb(138, 64, 11);
     text-decoration: underline;
-    color: rgb(112, 48, 3);
 }
-.navbtn{
-    background-color: chocolate;
-    border: none;
-    color: white;
-    font: 17px sans-serif;
-    height: 45px;
-    width: 120px;
-    border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
-}
-.navbtn:hover{
-    background-color: rgb(197, 92, 16);
-    cursor: pointer;
-}
-.navDropdown{
-    z-index: -1;
-    height: 60px;
-    width: 2px;
-    position: relative;
+header{
+    position: fixed;
     display: flex;
     flex-direction: column;
-    top: 15px
-}
-.dropImg{
-    display: none;
-    width: 140px;
-    height: 65px;
-}
-.dropdown{
-    display: none;
-    height: max-content;
-    width: 160px;
-    text-align: left;
-    line-height: 1.5;
-    padding-right: 20px;
-    top: 56px;
-    left: -20px;
     background-color: white;
+    padding: 6px auto;
+    top:0;
+    width: 100vw;
+    z-index: 4;
 }
-.navDropdown:hover .dropdown{
-    display: block;
-    position: absolute;
-    border-radius: 5px;
-    z-index: 1;
+.headerimgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
+/* banner section                       */
 
 .firstSection{
-    margin-top: 110px;
+    margin-top: 68px;
 }
 .bannerMod{
-    background-image: url(Untitled.png);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/026/466/922/large_2x/cup-of-coffee-espresso-beans-web-banner-with-copy-space-generative-ai-free-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -198,6 +180,7 @@ a:hover{
 }
 .coffeePlantation{
     width: 65%;
+    border-radius: 5px;
 }
 .fourthsection{
     width: 100vw;
@@ -265,20 +248,27 @@ h6{
     font-size: medium;
 }
 @media (max-width: 900px){
-    .navLinks{ display: none; }
-    .navDropdown{
-        z-index: 2;
-        width: 100px;
-        height: 100px;
-    }
+    
     .logo{
-        position: relative;
-        left: -70px;
+        width: 55%;
     }
     .dropImg{
-        position: relative;
-        right: -70px;
-        display: block;
+        width: auto;
+        height: 50px;
+    }
+    .burgermenu:nth-child(1){display:none;}
+    .burgermenu{
+         width: auto; height: 30px;
+    }
+    .ghostdiv{
+    visibility: hidden;
+    width: 70%;
+    }
+    a{
+        font-size: 1.1em;
+    }
+    ul{
+        padding: 0px auto;
     }
     .reviewSection{
         flex-direction: column;
@@ -300,5 +290,48 @@ h6{
         flex-direction: column;
         align-items: center;
         height: fit-content;
+    }
+}
+@media (max-width: 600px){
+    .navDropdown{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        width: auto;
+    }
+    .dropdown{
+        display: none;
+    }
+    .bm:hover .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 5;
+    }
+    .burgermenu:nth-child(1){display:inline;}
+    .burgermenu{
+         width: auto; height: 30px;
+    }
+    .dropImg{
+        width: auto;
+        height: 40px;
+    }
+    .ghostdiv2{
+        display: block;
+        visibility: hidden;
+        width: 70%;
+    }
+    .side{
+        position: relative;
+        flex-direction: row;
+        width: 80vw;
+        top: auto;
+        background-color: transparent;
     }
 }
