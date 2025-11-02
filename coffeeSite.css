@@ -19,14 +19,14 @@ body{
     
     cursor: pointer;
 }
-.burgermenu:nth-child(1){display:none;}
+.bm{display:none;}
 .navDropdown{
     position: relative;
     width: 90vw;
     padding: 0px auto;
     margin: 0px auto;
 }
-.iside{
+.side{
     position: fixed;
     height: fit-content;
     width: 60px;
@@ -45,14 +45,22 @@ body{
 .ghostdiv2{display: none;}
 
 ul{
+    position: fixed;
+    top: 13%;
+    left: 0%;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     padding-left: 0px;
-    width: 80vw;
+    width: 100vw;
+    background-color: white;
 }
 li{
-    padding-left: 15px;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+li:hover{
+    background-color: rgba(211, 211, 211, 0.61);
 }
 a{
     text-decoration: none;
@@ -61,7 +69,6 @@ a{
 }
 a:hover{
     color:rgb(138, 64, 11);
-    text-decoration: underline;
 }
 header{
     position: fixed;
@@ -71,6 +78,7 @@ header{
     padding: 6px auto;
     top:0;
     width: 100vw;
+    height: 125px;
     z-index: 4;
 }
 .headerimgs{
@@ -296,17 +304,22 @@ h6{
     .navDropdown{
         display: flex;
         flex-direction: row-reverse;
-        
         width: auto;
     }
-    .dropdown{
+    ul{
         display: none;
     }
-    .bm:hover .dropdown{
+    .bm{
+        display: flex;
+    }
+    .dropdown:hover ul{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        height: min-content;
+        line-height: 2;
+        width: min-content;
+        top: 30px;
         right: 0px;
         background-color: rgba(255, 255, 255, 0.9);
         border: 1px solid gray;
