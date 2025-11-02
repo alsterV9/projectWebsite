@@ -26,7 +26,7 @@ body{
     padding: 0px auto;
     margin: 0px auto;
 }
-.side{
+.iside{
     position: fixed;
     height: fit-content;
     width: 60px;
@@ -334,4 +334,7 @@ h6{
         top: auto;
         background-color: transparent;
     }
+    .paragraph2{width: 80%;}
+
+    .coffeePlantation{width: 80%;}
 }
