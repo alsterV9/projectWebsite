@@ -8,15 +8,28 @@ body{
     overflow-x: hidden;
 }
 /* top part nav of page */
+#imgcont{
+    position: relative;
+    background-color: lightblue;
+}
+#rdot{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
 .dropImg{
     height: 60px;
     width: 10%;
+    
 }
+
 .burgermenu{
     height: 40px;
     width: 40px;
     padding: 9px;
-    
     cursor: pointer;
 }
 .bm{display:none;}
