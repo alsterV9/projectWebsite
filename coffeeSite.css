@@ -11,6 +11,8 @@ body{
 #imgcont{
     position: relative;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
 }
 #rdot{
     background-color: red;
@@ -22,7 +24,7 @@ body{
 }
 .dropImg{
     height: 60px;
-    width: 10%;
+    width: 60px;
     
 }
 

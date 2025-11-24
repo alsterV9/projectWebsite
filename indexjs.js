@@ -17,11 +17,15 @@ let coffee = [
     {id:"not instock", price:"out of stock"}
 ]
 
-secsel.addEventListener('click', (e)=>{
+/*secsel.addEventListener('click', (e)=>{
     arr.push('item');
     rdot.innerText = arr.length;
     console.log(arr);
     console.log(e)
-});
-
-console.log(coffee[2].id);
+}); */
+function coffeefunc(id){
+    arr.push(coffee[id].id);
+    rdot.innerText = arr.length;
+    console.log(arr);
+    console.log(coffee[id].id + " costs: " + coffee[id].price);
+} 
