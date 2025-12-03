@@ -22,10 +22,18 @@ body{
     text-align: center;
     color: white;
 }
+.incart{
+    background-color: blueviolet;
+    height: 80px;
+    width: 89px;
+    color: white;
+}
+.cartbtn{
+    background-color: brown;
+}
 .dropImg{
     height: 60px;
-    width: 60px;
-    
+    width: 60px; 
 }
 
 .burgermenu{
@@ -271,7 +279,6 @@ h6{
     font-size: medium;
 }
 @media (max-width: 900px){
-    
     .logo{
         width: 55%;
     }
@@ -363,6 +370,5 @@ h6{
         background-color: transparent;
     }
     .paragraph2{width: 80%;}
-
     .coffeePlantation{width: 80%;}
 }
