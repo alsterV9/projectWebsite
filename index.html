@@ -14,8 +14,10 @@
             <img src="text292.svg" alt="the coffee logo" class="logo">
                 <div class="ghostdiv1">here is some text</div>
                 <div class="dropImg" id="dropimg1"></div>
-            <div id="imgcont"><div id="rdot">0</div><img src="https://img.favpng.com/11/13/20/shopping-cart-clip-art-computer-icons-portable-network-graphics-scalable-vector-graphics-png-favpng-MGu4wwNMSnraMbdQSPuGRUgFT.jpg" class="dropImg"></div>
-            <div id="incart" class="incart"></div>
+            <div id="imgcont" onclick="thap()"><div id="rdot">0</div><img src="cart.png" class="dropImg"></div>
+            <div id="incart" class="incart">
+                <button id="cartbtn">Remove Items</button>
+            </div> <!-- cart dropdown div -->
         </div>
             <div class="navDropdown">
                 <div class="side">
@@ -115,12 +117,12 @@
                     <h4 class="price">R15.00 <button class="btn" onclick="coffeefunc(4)">Add to Cart</button></h4>
                 </div>
             </section>
-            <section class="coffeeTile" id="cupicino">
+            <section class="coffeeTile" id="Cappuccino">
                 <div class="img">
                     <img src="coffee pic.png" alt="cup img" class="coffeeImg">
                 </div>
                 <div class="coffeeDescription">
-                    <h3 class="name">Cupocino</h3>
+                    <h3 class="name">Cappuccino</h3>
                     <p class="paragraph">
                         Clean, classic, unfussy.
                     </p>
@@ -132,7 +134,7 @@
         </section>
    </section>
    <section class="thirdSection">
-        <h2 style="color: black;">No Ordinary Coffee</h2>
+        <h2 style="color: black;">Beyond Ordinary Coffee</h2>
         <p class="paragraph2">
                 ☕🍩At the heart of every cup we brew is a commitment to ethical harvesting and holistic well-being. 
                 Our beans are sourced from small-scale farms that prioritize fair wages, sustainable practices, and biodiversity-ensuring
@@ -142,7 +144,7 @@
                 conscious choice for your body and the planet.
                 <!-- put a image of coffee plantation here -->
         </p>
-        <img src="https://tse4.mm.bing.net/th/id/OIP.xZ2QLPfei0wb7mLBgV3qrwHaDt?rs=1&pid=ImgDetMain&o=7&rm=3" alt="coffee plantation" class="coffeePlantation">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20240604/pngtree-coffee-and-arabica-coffee-plantation-harvest-day-image_15739887.jpg" alt="coffee plantation" class="coffeePlantation">
    </section>
    <section class="fourthsection">
         <h2 style="color: chocolate;">What Our Customers Say</h2>
@@ -186,9 +188,9 @@
         <div class="footerSignup">
             <form action="" id="signupForm">
                 <label for="name">Name:</label> <br>
-                <input type="text" id="name" placeholder="Enter Your Name" required> <br> <br>
+                <input type="text" id="name" placeholder="Enter Your Name" required  autocomplete="on"> <br> <br>
                 <label for="email">Email:</label> <br>
-                <input type="text" id="email" placeholder="Enter Your Email" required> <br> <br>
+                <input type="text" id="email" placeholder="Enter Your Email" required  autocomplete="on"> <br> <br>
                 <label for="password">Password:</label> <br>
                 <input type="password" id="password" placeholder="Create a Password" required> <br> <br>
                 <label for="repassord">Confirm Password:</label> <br>
