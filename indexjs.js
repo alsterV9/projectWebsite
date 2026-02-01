@@ -37,26 +37,17 @@ function coffeefunc(id){
     };
     rdot.innerText = arr.length;
     
-    
-    
-    
-    
-       
     } else{alert("Your Cart is full")}
 } 
-/*
 
-*/
-function thap(){
-    
-    totalprice = arr1[0];
-    incart.innerText=totalprice;
-    
-    arr.forEach((item) => {
-        console.log();
-        btn.innerText = item;
-        incart.append(btn);
-    });
-    
+function removebtn(){
+    if(arr.length > 0){
+        arr.pop();
+        arr1.pop();
+        rdot.innerText = arr.length;
+        if(incart.hasChildNodes){
+        incart.removeChild(incart.lastChild);
+    }
+    }
     
 }

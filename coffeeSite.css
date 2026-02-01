@@ -23,16 +23,41 @@ body{
     z-index: 2;
     color: white;
 }
+#shell{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    top: 150px;
+    right: 100px;
+    width: 60vw;
+    height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+    background-color: rgba(221, 220, 220, 0.527);
+}
 .incart{
     display: flex;
-    position: fixed;
+    position: relative;
+    align-items: center;
+    
     flex-direction: column-reverse;
-    background-color: blueviolet;
-    height: 200px;
-    width: 90px;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(210, 105, 30, 0.281);
+    height: 80%;
+    width: 75%;
     border-radius: 6px;
     color: white;
     z-index: 4;
+}
+.incart>button{
+    background-color: chocolate;
+    color: white;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+    border: none;
 }
 .cartbtn{
     background-color: brown;
@@ -71,7 +96,7 @@ body{
 }
 .dropdown{justify-content: center;}
 
-.ghostdiv1{visibility: hidden;}
+.ghostdiv1{visibility:hidden;}
 
 .ghostdiv2{display: none;}
 
