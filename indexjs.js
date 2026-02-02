@@ -1,6 +1,6 @@
 const rdot = document.getElementById("rdot");
-const secsel = document.getElementById("secsel");
-const incart = document.getElementById("incart");
+const secsel = document.getElementById("secsel"),cont=document.getElementById("cont");
+const incart = document.getElementById("innercont");
 const lungo = document.getElementById("lungo"),flatwhite=document.getElementById("flatwhite");
 const affogato = document.getElementById("affogato"),amaricano=document.getElementById("amaricano");
 const latte = document.getElementById("latte"),cappuccino=document.getElementById("cappuccino");
@@ -17,9 +17,17 @@ let coffee = [
     {id:"Amaricano", price:14, stock:true},
     {id:"Latte", price:15, stock:true},
     {id:"Cappuccino", price:13, stock:true},
-    {id:"not instock", stock: false}
+    {id:"not instock", stock: false, pattofile:"https://rlv.zcache.com/error_404_coffee_not_found_funny_mug-r903e5cb138fe47569dbdf40a39b4c818_kz92h_166.jpg?rlvnet=1"}
 ]
+function togglecart(){
+    if(cont.style.display === "none"){
+        cont.style.display = "flex";
+    } else{
+        cont.style.display = "none";
+    }
+}
 
+onload = hidecart();
 function coffeefunc(id){
     if(arr.length<10){
         arr.push(coffee[id].id +" R"+coffee[id].price);

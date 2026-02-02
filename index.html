@@ -9,12 +9,12 @@
     
 </head>
 <body>
-  <header>
+  <header >
         <div class="headerimgs">
             <img src="text292.svg" alt="the coffee logo" class="logo">
                 <div class="ghostdiv1">here is some text</div>
                 <div class="dropImg" id="dropimg1"></div>
-            <div id="imgcont" onclick="thap()"><div id="rdot">0</div><img src="cart.png" class="dropImg"></div>
+            <div id="imgcont" ><div id="rdot">0</div><img src="cart.png" class="dropImg" onclick="togglecart()"></div>
         </div>    
             <div class="navDropdown">
                 <div class="side">
@@ -38,11 +38,17 @@
         <!--  at media 600 navlinks is a bar with burger menu-->
    </header> <br>
 
-   <div id="shell">
+   <!--div id="shell">
                 <div id="incart" class="incart">
                     <button id="cartbtn" onclick="removebtn()">Remove Item</button>
-                </div> <!-- cart dropdown div -->
-            </div>
+                </div> <!-- cart dropdown div ->
+    </div-->
+
+    <container class="cont" id="cont">
+        <div id="top" class="box">Back Cart </div>
+        <div id="innercont"></div>
+        <div id="bottom" class="box">Total:$ 0<button id="cartbtn" onclick="removebtn()">Remove Item</button></div>
+    </container>
 
    <section class="firstSection">
      
