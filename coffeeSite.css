@@ -25,18 +25,25 @@ body{
 }
 #cont{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: cepnter;
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
     z-index: 5;
-    top: 150px;
+    top: 100px;
     right: 100px;
-    width: 60vw;
-    height: 70vh;
+    width: 88vw;
+    height: 85vh;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
-    background-color: rgba(221, 220, 220, 0.527);
+    border-radius: 5px;
+    background-color: rgba(221, 220, 220, 0.952);
 }
+/* test for cart btns and styling  */
+
+.cartitem{background-color: turquoise;height: 49px; width: 85%; display: flex; justify-content: space-between; align-items: center; padding: 0px 10px; margin: 5px 0px; border-radius: 5px;}
+
+
+/* test for cart btns and styling  */
 #top{
     position: relative;
     display: flex;
@@ -44,31 +51,42 @@ body{
     top: 0px;
     width: 100%;
     height: 8%;
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0);
 }
 #innercont{
     display: flex;
     position: relative;
     align-items: center;
     
-    flex-direction: column-reverse;
-    background-color: white;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.776);
     box-shadow: 4px 4px 6px rgba(210, 105, 30, 0.281);
     height: 84%;
-    width: 85%;
+    width: 50%;
+    padding: 10px;
     border-radius: 6px;
     color: white;
     z-index: 4;
 }
-#bottom{
+.hold{
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.sc{color:chocolate;}
+/*#bottom{
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     bottom: 0px;
     width: 100%;
-    height: 8%;
-    background-color: brown;
-}
+    height: 18%;
+    background-color: rgba(165, 42, 42, 0);
+} */
 .incart>button{
     background-color: chocolate;
     color: white;
@@ -78,11 +96,19 @@ body{
     border-radius: 5px;
     border: none;
 }
-.cartbtn{
-    background-color: brown;
-    width: 99%;
+#cartbtn{
+    background-color: rgba(185, 103, 53, 0.669);
+    border-radius: 5px;
+    font-size: 1.1em;
+    
+    color: white;
+    width: 130px;
     height: 50px;
 }
+#cartbtn:hover{
+    background-color: rgba(185, 103, 53, 0.9);
+    cursor: pointer;
+}   
 .dropImg{
     height: 55px;
     width: 60px; 
