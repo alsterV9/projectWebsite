@@ -27,7 +27,7 @@ function togglecart(){
     }
 }
 
-//onload = hidecart();
+
 function coffeefunc(id){
     if(arr.length<10){
         arr.push(coffee[id].id +" R"+coffee[id].price);
